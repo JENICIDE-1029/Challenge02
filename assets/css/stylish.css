@@ -7,6 +7,36 @@
     display: block;
     height: 40px;
     width: 100%;
-    background: url(./images/menu.icon.png) no-repeat 100% center;
-    }
+    background: url(../images/burger.png) no-repeat 98% center;
+    
+}
+header nav ul {
+    overflow:hidden;
+    list-style-type: none;
+    height: 0;
+}
+
+header nav ul.open {
+    height: auto;
+}
+
+header nav ul li {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: green;
+    background-color: lightgreen;
+    list-style-type: none;
+    padding: 10 px;
+    border-bottom: 1px solid white;
+    display: block;
+    margin: 0;
+    /* this removes the line underneath the links */
+    text-decoration: none;
+
+}
 }
