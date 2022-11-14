@@ -1,5 +1,13 @@
+body {
+
+    margin: 0;
+}
 
 
+header{
+width: 100%;
+padding:0;
+}
 
 /* for mobile devices */
 @media screen and (max-width:480px){
@@ -10,9 +18,16 @@
     background: url(../images/burger.png) no-repeat 98% center;
     
 }
+
+header {
+    width: 100%;
+    padding:0;
+    }
+
 header nav ul {
     overflow:hidden;
     list-style-type: none;
+    background: lightgreen;
     height: 0;
 }
 
@@ -22,9 +37,10 @@ header nav ul.open {
 
 header nav ul li {
     float: none;
-    text-align: left;
+    /* text-align: left; */
     width: 100%;
     margin: 0;
+
 }
 
 header nav ul li a {
