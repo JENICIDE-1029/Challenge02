@@ -4,9 +4,15 @@ body {
 }
 
 
-header{
+header {
 width: 100%;
 padding:0;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
+    height:auto;
 }
 
 /* for mobile devices */
@@ -19,15 +25,12 @@ padding:0;
     
 }
 
-header {
-    width: 100%;
-    padding:0;
-    }
 
 header nav ul {
     overflow:hidden;
     list-style-type: none;
-    background: lightgreen;
+    display:block;
+    background: green;
     height: 0;
 }
 
@@ -44,15 +47,16 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: green;
-    background-color: lightgreen;
+    color: white;
     list-style-type: none;
     padding: 10 px;
+    padding-left:0;
     border-bottom: 1px solid white;
     display: block;
     margin: 0;
     /* this removes the line underneath the links */
     text-decoration: none;
+    width:100%;
 
 }
 }
