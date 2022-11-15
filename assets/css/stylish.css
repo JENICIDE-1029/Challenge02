@@ -16,6 +16,7 @@ width: 100%;
 padding-top:20px;
 /* i actually dont want it to be fixed  */
 position:absolute; 
+display:inline-block;
 }
 
 header > h1 {
@@ -78,22 +79,29 @@ p {
     padding: 20px;
 }
 
+/* this is for the titled image that's bigger than the other two */
 .big-boy-image img{
-    margin: 5px 30px;
+    /* margin: 5px 30px; */
     border: 5px solid #5D7970;
-    width:88%;
+    width:auto;
+  
 }
 
-.org-images {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* these are for the smaller titled images */
 .smaller-image img {
     border: 5px solid #5D7970;
-    width: 100%;
-    margin: 0px 30px;
+    width: 30%;
 }
+
+
+/* .org-images {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    flex-direction:column;
+} */
+
+
 
 footer {
     background-color: #5D7970;
@@ -113,16 +121,41 @@ footer {
         font-size:25px;
     
       }
+      p {
+        color: white;
+        background-color: #5D7970;
+        margin-left: 20%;
+        margin-bottom: 15px;
+        /* padding-left: 20px; */
+        width:70%;
+    }
+
+    
+    .org-images img {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: center;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px;
+        border-left: 4px solid #5D7970;
+    }
+
 }
 
 /* for mobile devices */
 @media screen and (max-width:480px){
     .burger-nav{
-    display: inline-block;
+    display: block;
     height: 40px;
     width: 100%;
     background: url(../images/burger.png) no-repeat 98% center;
     
+}
+
+/* so i want the navigation burger to be i the right hand corner and easiest way for me to do that is by making the heading a biiiiit smaller so they all fit */
+header h1 {
+    font-size:35px;
 }
 
 header nav {
@@ -167,5 +200,7 @@ header nav ul li a {
     width:100%;
 
 }
+
+
 }
 
