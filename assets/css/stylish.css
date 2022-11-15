@@ -3,6 +3,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:Impact, Fantasy;
+
 }
 
 main {
@@ -11,15 +13,12 @@ main {
 
 header {
 width: 100%;
-/* background-color: #5D7970; */
 padding-top:20px;
-font-family:Impact, Fantasy;
-/* display: inline-block; */
-position:fixed; 
+/* i actually dont want it to be fixed  */
+position:absolute; 
 }
 
 header > h1 {
-    display:inline-block;
     padding-left: 20px;
     font-size: 40px;
     color:white;
@@ -55,13 +54,54 @@ header > h1 {
     background-position: center;
 }
 
-section .banner {
-    height: auto;
-}
+
 /* so we're mainly concernced with the largest image taking up the full screen of larger devices */
 .banner picture img {
     width:100%;
     border-bottom: 20px solid #5D7970;
+}
+
+/* let's put in the general styling of our headers for our sections */
+h2 {
+    color:#5D7970;
+    display:block;
+    margin-left:30px;
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: white;
+    background-color: #5D7970;
+    margin: 0px 30px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.big-boy-image img{
+    margin: 5px 30px;
+    border: 5px solid #5D7970;
+    width:88%;
+}
+
+.org-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smaller-image img {
+    border: 5px solid #5D7970;
+    width: 100%;
+    margin: 0px 30px;
+}
+
+footer {
+    background-color: #5D7970;
+    color: white;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* for tablet devices */
@@ -86,7 +126,6 @@ section .banner {
 }
 
 header nav {
-    display:inline-block;
     margin:0px;
     float: right;
     padding-right: 20px;
