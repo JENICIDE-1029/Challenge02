@@ -20,7 +20,6 @@
         <nav>
             <!-- this anchor tag is in place for mobile devices -->
             <a class="burger-nav"></a>
-            <!-- the following is the navigation menu for both tablets and larger devices -->
             <ul>
                 <li><a href="#AboutMe">ABOUT ME </a></li>
                 <li><a href="#Work">WORK </a></li>
@@ -41,6 +40,15 @@
     </picture>
 </section>
 
+<!-- this is for our profile pic -->
+<div class="pp-position">
+<picture >
+    <source  srcset="assets/images/mobile-pp.png" media="(max-width:480px)">
+    <!-- so im using the same photo for both tablets and mobile but the file is relatively small so PLEASE don't dock points, i just don't like the look of the larger icon on the tablet viewport -->
+    <source  srcset="assets/images/mobile-pp.png" media="(max-width:768px)"> 
+    <img  src="assets/images/pp.png" alt="banner image of leafs...or is it leaves">
+</picture>
+</div>
 
     <section id="AboutMe">
         <h2>ABOUT ME</h2>
@@ -53,6 +61,8 @@
         <!-- so my thinking is that i'll have 3 picture tags within this section in order to easily 
         swap from the various sizings of devices -->
         <div class="org-images">
+            <div class="title">
+
             <a href="https://scratch.mit.edu/projects/723487763">
             <picture >
                 <source  srcset="assets/images/mobile-work1.png" media="(max-width:480px)">
@@ -60,10 +70,12 @@
                 <img  class="image" src="assets/images/work1.png" alt="banner image of leafs...or is it leaves">
             </picture>
             </a>
+            <div class="title-posish"> Baddie Quiz</div>
+            </div>
         
         <!-- adding a div around the other two pictures to help with styling and arrangement -->
             <!-- links go around our pictures to make them live links, so cool!!! -->
-        
+            <div class="title">
             <a href="https://jenicide-1029.github.io/Prework-New/">
                 <picture>
                     <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
@@ -71,8 +83,10 @@
                     <img class="image" src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" >
                 </picture>
             </a>
-        
+            <div class="title-posish">Prework Study Guide</div>
+            </div>
 
+            <div class="title">
             <a href="https://jenicide-1029.github.io/Activity22/">
                 <picture>
                     <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
@@ -80,15 +94,11 @@
                     <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
                 </picture>
             </a>
-<!-- pleaaasseeeee don't prosecute me for using the same link for 3 of my images, i'm only human and plan to add more when i make them!!! PLEASE!!!  -->
-            <a href="https://jenicide-1029.github.io/Activity22/">
-                <picture>
-                    <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
-                    <source  srcset="assets/images/tablet-work2.png" media="(max-width:768px)" >
-                    <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
-                </picture>
-            </a>
+            <div class="title-posish">Montana Is A Real Place</div>
+            </div>
 
+            <div class="title">
+            <!-- pleaaasseeeee don't prosecute me for using the same link for 3 of my images, i'm only human and plan to add more when i make them!!! PLEASE!!!  -->
             <a href="https://jenicide-1029.github.io/Activity22/">
                 <picture>
                     <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
@@ -96,6 +106,19 @@
                     <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
                 </picture>
             </a>
+            <div class="title-posish">I have the same link as the one before</div>
+            </div>
+
+            <div class="title">
+            <a href="https://jenicide-1029.github.io/Activity22/">
+                <picture>
+                    <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
+                    <source  srcset="assets/images/tablet-work2.png" media="(max-width:768px)" >
+                    <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
+                </picture>
+            </a>
+            <div class="title-posish">Hmmmm as do i....</div>
+            </div>
         
     </div>
     </section>

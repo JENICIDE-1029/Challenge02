@@ -1,4 +1,4 @@
-
+/*  doesnt this kind of act like a reset.css??? */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,10 +7,8 @@
 
 }
 
-main {
-    display: block;
-}
 
+/* START OF HEADER - START OF HEADER - START OF HEADER - START OF HEADER - */
 header {
 width: 100%;
 padding-top:20px;
@@ -48,13 +46,13 @@ header > h1 {
     color: white;
   }
 
+/* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 .banner {
     width: 100%;
     /* margin-bottom: 20px; */
     background-size: cover;
     background-position: center;
 }
-
 
 /* so we're mainly concernced with the largest image taking up the full screen of larger devices */
 .banner picture img {
@@ -71,6 +69,7 @@ h2 {
     margin-bottom: 5px;
 }
 
+
 p {
     color: white;
     background-color: #5D7970;
@@ -79,13 +78,14 @@ p {
     padding: 20px;
 }
 
-/* this is for the titled image that's bigger than the other two */
+/* this is what adds the border and styling to each of our images */
 .image {
     margin: 5px;
     border: 5px solid #5D7970;
     width:auto;
 }
 
+/* this bad boy right here is why I spent Tuesday crying, but it also is how we add our left border line and flex it up */
 .org-images {
     display: flex;
     flex-wrap:wrap;
@@ -108,6 +108,29 @@ p {
 
 }
 
+.title {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title-posish {
+    position: absolute;
+    bottom: 13px;
+    left: 16px;
+    padding:5px;
+    background-color: #5D7970;
+}
+
+.pp-position {
+    position: absolute;
+    top: 110px;
+    left: 16px;
+    padding:10px;
+    background-color: #5D7970;
+}
+
+/* i barlet touched the footer and from the looks of it...neither did the mock-up sooooooo */
 footer {
     background-color: #5D7970;
     color: white;
@@ -117,15 +140,20 @@ footer {
     align-items: center;
 }
 
-/* for tablet devices */
+/* FOR TABLET DEVICES */
 @media screen and (max-width:768px){
-    /* I actually like having this off to the s */
+
+
+    /* I actually like having this off to the side and not inherently in the center  */
     header nav ul{
-        margin-top:10px;
+        margin-top:20px;
         padding-left:0px;
         font-size:25px;
+        display:flex;
+        justify-content: center;
     
       }
+      /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 
       p {
         color: #5D7970;
@@ -138,7 +166,18 @@ footer {
 
     }
 
+    .banner {
+        margin-bottom: 80px;
+    }
     
+    .pp-position {
+        position: absolute;
+        top: 120px;
+        right: 25px;
+        padding:15px;
+        background-color: #5D7970;
+    }
+
     .org-images  {
         display: flex;
         flex-flow: row wrap;
@@ -151,7 +190,7 @@ footer {
 
 }
 
-/* for mobile devices */
+/* MOBILE DEVICES MEDIA QUERY OR HOWEVER YOU SPELL QUEREY */
 @media screen and (max-width:480px){
     .burger-nav{
     display: block;
@@ -161,17 +200,19 @@ footer {
     
 }
 
-/* so i want the navigation burger to be i the right hand corner and easiest way for me to do that is by making the heading a biiiiit smaller so they all fit */
+/* so i want the navigation burger to be in the top right hand corner and easiest way for me to do that is by making the heading a biiiiit smaller so they all fit */
 header h1 {
     font-size:35px;
 }
 
+/* this is lining up our navigation menu RIGHT where we want it */
 header nav {
     margin:0px;
     float: right;
     padding-right: 20px;
 }
 
+/* so this is very cool, the following set of code works alongside this set in order to have our navigation menu appear and magically disappear!!!*/
 header nav ul {
     overflow:hidden;
     list-style-type: none;
@@ -180,12 +221,14 @@ header nav ul {
     height: 0px;
 }
 
+/* this is the bit of code that gets inserted with our javascripppttt, love her */
 header nav ul.open {
     margin-top: 10px;
     height: auto;
     width: 100%;
 }
 
+/* the net ninja guy LOVED setting his margins to 0 and this is all to format the individual list items in the ul */
 header nav ul li {
     float: none;
     text-align: right;
@@ -194,6 +237,7 @@ header nav ul li {
     display: block;
 }
 
+/* okaaaayyy so this is the last layer of the header where we are now formatting the links within our li within our ul within our nav */
 header nav ul li a {
     color: white;
     list-style-type: none;
@@ -204,6 +248,8 @@ header nav ul li a {
     width:100%;
 
 }
+
+/* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 p {
     color: #5D7970;
     background-color: white;
@@ -213,6 +259,18 @@ p {
     width:70%;
     border-left: 4px solid #5D7970;
 
+}
+
+.banner {
+    margin-bottom: 80px;
+}
+
+.pp-position {
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    padding:15px;
+    background-color: #5D7970;
 }
 
 }
