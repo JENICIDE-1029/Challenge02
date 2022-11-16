@@ -70,7 +70,7 @@ h2 {
 }
 
 
-p {
+.paragraph {
     color: white;
     background-color: #5D7970;
     margin: 0px 30px;
@@ -102,7 +102,7 @@ p {
 }
 
 
-p {
+.paragraph {
     color: #5D7970;
     background-color: white;
     margin-left: 50px;
@@ -167,7 +167,7 @@ footer {
       }
       /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 
-      p {
+      .paragraph {
         color: #5D7970;
         background-color: white;
         margin-left: 50px;
@@ -278,7 +278,7 @@ header nav ul li a {
     /* width:33%; */
 }
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
-p {
+.paragraph {
     color: #5D7970;
     background-color: white;
     margin-left: 50px;
