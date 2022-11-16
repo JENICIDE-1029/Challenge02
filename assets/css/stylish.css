@@ -80,28 +80,32 @@ p {
 }
 
 /* this is for the titled image that's bigger than the other two */
-.big-boy-image img{
+.image {
     /* margin: 5px 30px; */
     border: 5px solid #5D7970;
-    width:auto;
-  
+    /* width:auto; */
 }
 
-/* these are for the smaller titled images */
-.smaller-image img {
-    border: 5px solid #5D7970;
-    width: 30%;
-}
-
-
-/* .org-images {
+.org-images {
     display: flex;
     flex-wrap:wrap;
-    align-items: center;
-    flex-direction:column;
-} */
+    flex-direction:row;
+    padding-left:80px;
+    margin-left:50px;
+    border-left: 4px solid #5D7970;
+}
 
 
+p {
+    color: #5D7970;
+    background-color: white;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    width:70%;
+    border-left: 4px solid #5D7970;
+
+}
 
 footer {
     background-color: #5D7970;
@@ -121,24 +125,25 @@ footer {
         font-size:25px;
     
       }
+
       p {
-        color: white;
-        background-color: #5D7970;
-        margin-left: 20%;
+        color: #5D7970;
+        background-color: white;
+        margin-left: 50px;
         margin-bottom: 15px;
-        /* padding-left: 20px; */
+        padding-left: 20px;
         width:70%;
+        border-left: 4px solid #5D7970;
+
     }
 
     
-    .org-images img {
+    .org-images  {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: center;
         align-items: center;
         justify-content: center;
-        margin: 10px 20px;
-        border-left: 4px solid #5D7970;
+     
     }
 
 }
@@ -168,7 +173,6 @@ header nav ul {
     overflow:hidden;
     list-style-type: none;
     margin-left:0;
-  
     display:block;
     height: 0px;
 }
@@ -190,9 +194,6 @@ header nav ul li {
 header nav ul li a {
     color: white;
     list-style-type: none;
-    /* padding: 10 px; */
-    /* padding-right:10; */
-   
     display: block;
     margin: 0;
     /* this removes the line underneath the links */
@@ -200,7 +201,16 @@ header nav ul li a {
     width:100%;
 
 }
+p {
+    color: #5D7970;
+    background-color: white;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    width:70%;
+    border-left: 4px solid #5D7970;
 
+}
 
 }
 
