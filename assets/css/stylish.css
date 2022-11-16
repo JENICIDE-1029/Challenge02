@@ -83,6 +83,11 @@ p {
     margin: 5px;
     border: 5px solid #5D7970;
     width:auto;
+/* this little bit is to make our images look like theyre hoveringggg */
+    opacity: 0.56;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 /* this bad boy right here is why I spent Tuesday crying, but it also is how we add our left border line and flex it up */
@@ -112,6 +117,7 @@ p {
     position: relative;
     text-align: center;
     color: white;
+
 }
 
 .title-posish {
@@ -120,6 +126,11 @@ p {
     left: 16px;
     padding:5px;
     background-color: #5D7970;
+}
+
+/* this is the other component to make our images hover */
+.title:hover .image {
+    opacity: 1.0;
 }
 
 .pp-position {
