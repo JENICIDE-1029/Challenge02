@@ -274,8 +274,9 @@ header nav ul li a {
     background-color: #5D7970;
     /* okay so the two lines below are two different options to override the previous styling of this image
      since it seems like the right property defined twice earlier doesnt seem to go away when the viewport changes to 480 */
-    right:332px;
+    right:320px;
     /* width:33%; */
+    min-width: 120px;
 }
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 .paragraph {
