@@ -70,13 +70,7 @@ h2 {
 }
 
 
-.paragraph {
-    color: white;
-    background-color: #5D7970;
-    margin: 0px 30px;
-    margin-bottom: 15px;
-    padding: 20px;
-}
+
 
 /* this is what adds the border and styling to each of our images */
 .image {
@@ -105,12 +99,11 @@ h2 {
 .paragraph {
     color: #5D7970;
     background-color: white;
-    margin-left: 50px;
-    margin-bottom: 15px;
+    margin: 5px 30px 15px 50px;
     padding-left: 20px;
     width:70%;
     border-left: 4px solid #5D7970;
-
+    padding: 20px;
 }
 
 .title {
@@ -155,16 +148,19 @@ footer {
 /* FOR TABLET DEVICES */
 @media screen and (max-width:768px){
 
+    h2 {
+      font-size: 30px;
+       
+    }
 
-    /* I actually like having this off to the side and not inherently in the center  */
-    header nav ul{
-        margin-top:20px;
-        padding-left:0px;
-        font-size:25px;
-        display:flex;
-        justify-content: center;
-    
+    header h1{
+     /* i want this to be on its own line */
+        display:block;
+        width: 100%;
       }
+
+     /* i am making the executive decision to not center my navigation menu because i like it off to the side and it is no longer fighting for room with the main header */
+
       /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 
       .paragraph {
@@ -173,7 +169,7 @@ footer {
         margin-left: 50px;
         margin-bottom: 15px;
         padding-left: 20px;
-        width:70%;
+        width:80%;
         border-left: 4px solid #5D7970;
 
     }
@@ -193,14 +189,10 @@ footer {
     }
 
     .org-images  {
-        display: flex;
-        flex-flow: row wrap;
-        align-content: center;
-        margin: 5px;
-        margin-left: 50px;
-        padding-left: 20px;
-
+justify-content: space-evenly;
     }
+
+
 
 }
 
@@ -211,14 +203,20 @@ footer {
     .burger-nav{
     display: block;
     height: 40px;
-    width: 100%;
+    width: auto;
     background: url(../images/burger.png) no-repeat 98% center;
     
 }
 
-/* so i want the navigation burger to be in the top right hand corner and easiest way for me to do that is by making the heading a biiiiit smaller so they all fit */
+/* this will make our navigation menu bar be at the top right hand corner!  */
 header h1 {
     font-size:35px;
+    display: inline-block;
+    width: auto;
+}
+
+h2 {
+    font-size: 25px;
 }
 
 /* this is lining up our navigation menu RIGHT where we want it */
@@ -268,14 +266,12 @@ header nav ul li a {
 
 .pp-position {
     position:absolute;
-    top: 110px;
+    top: 90px;
     left: 25px;
     padding:10px;
     background-color: #5D7970;
-    /* okay so the two lines below are two different options to override the previous styling of this image
-     since it seems like the right property defined twice earlier doesnt seem to go away when the viewport changes to 480 */
+    /* the following two lines are in place to override the right property that was used in the other images since it seems to be coming through here on this one*/
     right:320px;
-    /* width:33%; */
     min-width: 120px;
 }
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
