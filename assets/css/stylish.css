@@ -8,18 +8,20 @@
 }
 
 
+
 /* START OF HEADER - START OF HEADER - START OF HEADER - START OF HEADER - */
 header {
 width: 100%;
-padding-top:20px;
+padding-top:40px;
 /* i actually dont want it to be fixed  */
 position:absolute; 
 display:inline-block;
 }
 
-header > h1 {
-    padding-left: 20px;
-    font-size: 40px;
+header  h1 {
+    
+    padding-left: 35%;
+    font-size: 80px;
     color:white;
     float: left;
   }
@@ -32,12 +34,13 @@ header > h1 {
   
   header nav ul {
     list-style-type: none;
-
+    font-size: 40%;
+    padding-left: 255px;
   }
   
   header nav ul li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 10px;
 
   }
 
@@ -129,9 +132,10 @@ h2 {
 .pp-position {
     position: absolute;
     top: 110px;
-    right: 40px;
     padding:10px;
     background-color: #5D7970;
+    top: 70px;
+    left: 40px;
 }
 
 /* i barlet touched the footer and from the looks of it...neither did the mock-up sooooooo */
@@ -153,10 +157,13 @@ footer {
        
     }
 
+    
+
     header h1{
      /* i want this to be on its own line */
         display:block;
         width: 100%;
+        font-size: 50px;
       }
 
      /* i am making the executive decision to not center my navigation menu because i like it off to the side and it is no longer fighting for room with the main header */
@@ -181,7 +188,7 @@ footer {
     /* for our profile picture */
     .pp-position {
         position: absolute;
-        top: 120px;
+        top: 150px;
         right: 25px;
         padding:10px;
         background-color: #5D7970;
@@ -210,9 +217,10 @@ justify-content: space-evenly;
 
 /* this will make our navigation menu bar be at the top right hand corner!  */
 header h1 {
-    font-size:35px;
+    font-size:50px;
     display: inline-block;
     width: auto;
+    padding-left: 25px;
 }
 
 h2 {
@@ -221,9 +229,11 @@ h2 {
 
 /* this is lining up our navigation menu RIGHT where we want it */
 header nav {
-    margin:0px;
-    float: right;
+    margin: 0px;
     padding-right: 20px;
+    font-size: 50px;
+    position: relative;
+    top: -52px;
 }
 
 /* so this is very cool, the following set of code works alongside this set in order to have our navigation menu appear and magically disappear!!!*/
@@ -266,13 +276,14 @@ header nav ul li a {
 
 .pp-position {
     position:absolute;
-    top: 90px;
+    top: 150px;
     left: 25px;
     padding:10px;
     background-color: #5D7970;
     /* the following two lines are in place to override the right property that was used in the other images since it seems to be coming through here on this one*/
     right:320px;
     min-width: 120px;
+    max-width: 123.5px;
 }
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 .paragraph {
@@ -289,6 +300,15 @@ header nav ul li a {
 .banner {
     margin-bottom: 80px;
 }
-
+.org-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+    border-left: 4px solid #5D7970;
+    align-content: space-evenly;
+    padding-left: 20px;
+    margin-right: 60px;
+}
 
 }
