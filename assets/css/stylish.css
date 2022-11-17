@@ -28,14 +28,14 @@ header  h1 {
   
   header nav {
     margin-right: 20px;
-    float: right;
+    /* float: right; */
     font-size: 25px;
   }
   
   header nav ul {
     list-style-type: none;
-    font-size: 40%;
-    padding-left: 255px;
+    /* font-size: 40%; */
+    padding-left: 35%;
   }
   
   header nav ul li {
@@ -52,7 +52,7 @@ header  h1 {
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 .banner {
     width: 100%;
-    /* margin-bottom: 20px; */
+    margin-bottom: 70px;
     background-size: cover;
     background-position: center;
 }
@@ -70,6 +70,7 @@ h2 {
     margin-left:30px;
     margin-top:20px;
     margin-bottom: 5px;
+    font-size: 50px;
 }
 
 
@@ -96,6 +97,7 @@ h2 {
     border-left: 4px solid #5D7970;
     align-content: space-evenly;
     padding-left: 20px;
+    margin-right: 80px;
 }
 
 
@@ -104,15 +106,17 @@ h2 {
     background-color: white;
     margin: 5px 30px 15px 50px;
     padding-left: 20px;
-    width:70%;
+    width:80%;
     border-left: 4px solid #5D7970;
     padding: 20px;
+    font-size: 25px;
 }
 
 .title {
     position: relative;
     text-align: center;
     color: white;
+    font-size: 20px;
 
 }
 
@@ -147,18 +151,25 @@ footer {
     justify-content: center;
     align-items: center;
 }
+address {
+    display:flex;
+    flex-flow: row wrap;
+}
 
+address p {
+    margin-right: 10px;
+}
 
 /* FOR TABLET DEVICES */
 @media screen and (max-width:768px){
 
     h2 {
-      font-size: 30px;
+      font-size: 40px;
        
     }
 
     header {
-        padding-top: 40px;
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -170,27 +181,24 @@ footer {
     header h1{
      /* i want this to be on its own line */
         display:block;
-        width: 100%;
         font-size: 50px;
+        padding-left: 0px;
       }
 
      /* i am making the executive decision to not center my navigation menu because i like it off to the side and it is no longer fighting for room with the main header */
 
       /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
+header nav ul {
+    list-style-type: none;
+    font-size: 25px;
+    padding-left: 0px;
+}
 
-      .paragraph {
-        color: #5D7970;
-        background-color: white;
-        margin-left: 50px;
-        margin-bottom: 15px;
-        padding-left: 20px;
-        width:80%;
-        border-left: 4px solid #5D7970;
 
-    }
+ 
 
     .banner {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
     
     /* for our profile picture */
@@ -209,7 +217,23 @@ justify-content: space-evenly;
 margin-right: 50px;
     }
 
+address {
+    display:flex;
+    flex-flow: row wrap;
+}
 
+address p {
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 15px;
+}
+
+.title-posish {
+    bottom: 12px;
+
+}
 
 }
 
@@ -226,7 +250,7 @@ margin-right: 50px;
 }
 
 header  {
-    padding-top: 20px;
+    padding-top: 40px;
     position: absolute;
     display: inline-block;
     margin: 0px;
@@ -252,7 +276,6 @@ header nav {
     padding-right: 20px;
     font-size: 50px;
     position: relative;
-    top: -52px;
 }
 
 /* so this is very cool, the following set of code works alongside this set in order to have our navigation menu appear and magically disappear!!!*/
@@ -269,6 +292,7 @@ header nav ul.open {
     margin-top: 10px;
     height: auto;
     width: 100%;
+    font-size: 20px;
 }
 
 /* the net ninja guy LOVED setting his margins to 0 and this is all to format the individual list items in the ul */
@@ -305,16 +329,7 @@ header nav ul li a {
     max-width: 123.5px;
 }
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
-.paragraph {
-    color: #5D7970;
-    background-color: white;
-    margin-left: 50px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    width:70%;
-    border-left: 4px solid #5D7970;
 
-}
 
 .banner {
     margin-bottom: 80px;
@@ -329,5 +344,19 @@ header nav ul li a {
     padding-left: 20px;
     margin-right: 60px;
 }
+
+.paragraph {
+    font-size: 15px;
+}
+
+.title {
+    font-size: 10px;
+}
+
+.title-posish {
+    bottom: 12px;
+
+}
+
 
 }
