@@ -19,23 +19,23 @@ display:inline-block;
 }
 
 header  h1 {
-    
-    padding-left: 35%;
+    display:block;
+    width:100%;
+    padding-left: 280px;
     font-size: 80px;
     color:white;
     float: left;
   }
   
   header nav {
-    margin-right: 20px;
-    /* float: right; */
+    margin-right: 40px;
+padding-left:280px;
     font-size: 25px;
   }
   
   header nav ul {
     list-style-type: none;
     /* font-size: 40%; */
-    padding-left: 35%;
   }
   
   header nav ul li {
@@ -80,10 +80,9 @@ h2 {
 .image {
     margin: 5px;
     border: 5px solid #5D7970;
-    width:auto;
+    width:100%;
 /* this little bit is to make our images look like theyre hoveringggg */
     opacity: 0.56;
-    width: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -157,7 +156,8 @@ address {
 }
 
 address p {
-    margin-right: 10px;
+    margin-right: 40px;
+    padding-left:20px;
 }
 
 /* FOR TABLET DEVICES */
@@ -183,13 +183,17 @@ address p {
         display:block;
         font-size: 50px;
         padding-left: 0px;
+        width:auto;
+      }
+
+      header nav {
+        padding-left:0px;
       }
 
      /* i am making the executive decision to not center my navigation menu because i like it off to the side and it is no longer fighting for room with the main header */
 
       /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 header nav ul {
-    list-style-type: none;
     font-size: 25px;
     padding-left: 0px;
 }
@@ -241,22 +245,25 @@ address p {
 
 /* MOBILE DEVICES MEDIA QUERY OR HOWEVER YOU SPELL QUEREY */
 @media screen and (max-width:480px){
-    .burger-nav{
-    display: block;
-    height: 40px;
-    width: auto;
-    background: url(../images/burger.png) no-repeat 98% center;
+    header  {
+        padding-top: 40px;
+        position: absolute;
+        display: inline-block;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     
-}
+      
+        .burger-nav{
+        display: block;
+    
+        height: 40px;
+        width: auto;
+        background: url(../images/burger.png) no-repeat 98% center;
+        
+    }
 
-header  {
-    padding-top: 40px;
-    position: absolute;
-    display: inline-block;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
 /* this will make our navigation menu bar be at the top right hand corner!  */
 header h1 {
