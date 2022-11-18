@@ -11,9 +11,9 @@ N/A
 
 ## Usage
 
-To use this marketing business website, click on the navigation bar menu items to be directed to the various sections within the webpage detailing what Horiseon has to offer along with additional benefits of partnering with them 
+To use this portfolio website, click on the navigation bar menu items to be directed to the various sections within the webpage detailing what Horiseon has to offer along with additional benefits of partnering with them 
 
 
 ![Screenshot of Website](assets/images/screenshot.png)
 
-!link to Website: file:///Users/Jenni/Bootcamp/Repos/Challenge2/index.html
+!link to Website:file:///Users/Jenni/Bootcamp/Repos/Challenge2/index.html 
