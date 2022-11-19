@@ -16,4 +16,4 @@ To use this portfolio website, click on the navigation bar menu items to be dire
 
 ![Screenshot of Website](assets/images/screenshot.png)
 
-!link to Website:file:///Users/Jenni/Bootcamp/Repos/Challenge2/index.html 
+!link to Website:https://jenicide-1029.github.io/Challenge2/ 
