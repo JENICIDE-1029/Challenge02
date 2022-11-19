@@ -14,7 +14,6 @@
 header {
 width: 100%;
 padding-top:40px;
-/* i actually dont want it to be fixed  */
 position:absolute; 
 display:inline-block;
 }
@@ -30,7 +29,7 @@ header  h1 {
   
   header nav {
     margin-right: 40px;
-padding-left:280px;
+    padding-left:280px;
     font-size: 25px;
   }
   
@@ -49,7 +48,6 @@ padding-left:280px;
     color: white;
   }
 
-/* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 .banner {
     width: 100%;
     margin-bottom: 70px;
@@ -57,10 +55,18 @@ padding-left:280px;
     background-position: center;
 }
 
-/* so we're mainly concernced with the largest image taking up the full screen of larger devices */
 .banner picture img {
     width:100%;
     border-bottom: 20px solid #5D7970;
+}
+
+.pp-position {
+    position: absolute;
+    top: 110px;
+    padding:10px;
+    background-color: #5D7970;
+    top: 70px;
+    left: 40px;
 }
 
 /* let's put in the general styling of our headers for our sections */
@@ -73,18 +79,15 @@ h2 {
     font-size: 50px;
 }
 
-
-
-
-/* this is what adds the border and styling to each of our images */
-.image {
-    margin: 5px;
-    border: 5px solid #5D7970;
-    width:100%;
-/* this little bit is to make our images look like theyre hoveringggg */
-    opacity: 0.56;
-    transition: .5s ease;
-    backface-visibility: hidden;
+.paragraph {
+    color: #5D7970;
+    background-color: white;
+    margin: 5px 30px 15px 50px;
+    padding-left: 20px;
+    width:80%;
+    border-left: 4px solid #5D7970;
+    padding: 20px;
+    font-size: 25px;
 }
 
 /* this bad boy right here is why I spent Tuesday crying, but it also is how we add our left border line and flex it up */
@@ -99,19 +102,18 @@ h2 {
     margin-right: 30%;
 }
 
-
-
-.paragraph {
-    color: #5D7970;
-    background-color: white;
-    margin: 5px 30px 15px 50px;
-    padding-left: 20px;
-    width:80%;
-    border-left: 4px solid #5D7970;
-    padding: 20px;
-    font-size: 25px;
+/* this is what adds the border and styling to each of our images in the work section*/
+.image {
+    margin: 5px;
+    border: 5px solid #5D7970;
+    width:100%;
+/* this little bit is to make our images look like theyre hoveringggg */
+    opacity: 0.56;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
+/* the following two classes are for the title within our images in the work section */
 .title {
     position: relative;
     text-align: center;
@@ -133,24 +135,8 @@ h2 {
     opacity: 1.0;
 }
 
-.pp-position {
-    position: absolute;
-    top: 110px;
-    padding:10px;
-    background-color: #5D7970;
-    top: 70px;
-    left: 40px;
-}
 
-/* i barlet touched the footer and from the looks of it...neither did the mock-up sooooooo */
-footer {
-    background-color: #5D7970;
-    color: white;
-    height:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 address {
     display:flex;
     flex-flow: row wrap;
@@ -159,6 +145,16 @@ address {
 address p {
     margin-right: 40px;
     padding-left:20px;
+}
+
+/* i barley touched the footer and from the looks of it...neither did the mock-up sooooooo */
+footer {
+    background-color: #5D7970;
+    color: white;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* FOR TABLET DEVICES */
@@ -171,12 +167,11 @@ address p {
 
     header {
         padding-top: 50px;
-        display: flex;
+        display: flex; 
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-left: 10%;
-        padding-right: 10%;
+    
     }
 
     header h1{
@@ -193,13 +188,9 @@ address p {
      /* i am making the executive decision to not center my navigation menu because i like it off to the side and it is no longer fighting for room with the main header */
 
       /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
-header nav ul {
-    font-size: 25px;
-    padding-left: 0px;
-}
-
-
- 
+        header nav ul {
+            font-size: 25px;
+        }
 
     .banner {
         margin-bottom: 30px;
@@ -210,20 +201,9 @@ header nav ul {
         top: 150px;
         right: 34%;
         left: 40%;
-        background-color: #5D7970;
         max-width: 144px;
         min-width: 145px;
     }
-
-
-address {
-    display:flex;
-    flex-flow: row wrap;
-}
-
-address p {
-    margin-right: 10px;
-}
 
 .title {
     font-size: 15px;
@@ -233,6 +213,10 @@ address p {
     bottom: 12px;
 
 }
+address p {
+    margin-right: 10px;
+}
+
 
 }
 
@@ -242,11 +226,8 @@ address p {
 @media screen and (max-width:480px){
     header  {
         display: inline-block;
-        margin: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
+     
     }
-    
         .burger-nav{
         display: block;
         height: 40px;
@@ -259,13 +240,7 @@ address p {
 /* this will make our navigation menu bar be at the top right hand corner!  */
 header h1 {
     font-size:40px;
-    display: inline-block;
-    width: auto;
     padding-left: 25px;
-}
-
-h2 {
-    font-size: 25px;
 }
 
 /* this is lining up our navigation menu RIGHT where we want it */
@@ -273,8 +248,8 @@ header nav {
     margin: 0px;
     padding-right: 20px;
     font-size: 50px;
-    position: relative;
 }
+
 
 /* so this is very cool, the following set of code works alongside this set in order to have our navigation menu appear and magically disappear!!!*/
 header nav ul {
@@ -293,7 +268,7 @@ header nav ul.open {
     font-size: 20px;
 }
 
-/* the net ninja guy LOVED setting his margins to 0 and this is all to format the individual list items in the ul */
+/* the net ninja guy LOVED setting his margins to 0 and this is all to format the individual list items in the ul for the burgher menu*/
 header nav ul li {
     float: none;
     text-align: right;
@@ -304,23 +279,23 @@ header nav ul li {
 
 /* okaaaayyy so this is the last layer of the header where we are now formatting the links within our li within our ul within our nav */
 header nav ul li a {
-    color: white;
     list-style-type: none;
     display: block;
     margin: 0;
     /* this removes the line underneath the links */
-    text-decoration: none;
     width:100%;
 
 }
 
 
+.banner {
+    margin-bottom: 80px;
+}
+
+
 .pp-position {
-    position:absolute;
     top: 150px;
     left: 25px;
-    padding:10px;
-    background-color: #5D7970;
     /* the following two lines are in place to override the right property that was used in the other images since it seems to be coming through here on this one*/
     right:320px;
     min-width: 120px;
@@ -329,10 +304,9 @@ header nav ul li a {
 /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
 
 
-.banner {
-    margin-bottom: 80px;
+h2 {
+    font-size: 25px;
 }
-
 
 .paragraph {
     font-size: 15px;
