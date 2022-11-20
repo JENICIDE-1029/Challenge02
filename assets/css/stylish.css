@@ -99,14 +99,14 @@ h2 {
     border-left: 4px solid #5D7970;
     align-content: space-evenly;
     padding-left: 20px;
-    margin-right: 30%;
+    margin-right: 20%;
 }
 
 /* this is what adds the border and styling to each of our images in the work section*/
 .image {
     margin: 5px;
     border: 5px solid #5D7970;
-    width:100%;
+    width:auto;
 /* this little bit is to make our images look like theyre hoveringggg */
     opacity: 0.56;
     transition: .5s ease;
@@ -187,7 +187,6 @@ footer {
 
      /* i am making the executive decision to not center my navigation menu because i like it off to the side and it is no longer fighting for room with the main header */
 
-      /* END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER - END OF HEADER */
         header nav ul {
             font-size: 25px;
         }
@@ -204,6 +203,15 @@ footer {
         max-width: 144px;
         min-width: 145px;
     }
+
+    .org-images {
+        margin-right:5%;
+    }
+
+
+/* .image{
+    width:auto;
+} */
 
 .title {
     font-size: 15px;
@@ -326,5 +334,9 @@ h2 {
     margin-right:10%;
 }
 
+/* someone PLEASE tell me why this makes the images fit onto the screen?? but the width of auto doesnt? */
+.image {
+    width:100%;
+}
 
 }
