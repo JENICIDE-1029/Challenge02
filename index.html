@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <title>JGM Portfolio</title>
+    <title>JGM Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,14 @@
     <link rel="stylesheet" href="./assets/css/stylish.css">
     <script>
         // Picture element HTML5 shiv
-        document.createElement( "picture" );
-      </script>
-      <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
+        document.createElement("picture");
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
 </head>
 
 <body>
     <header>
-         <h1 class="default-header">JGM PORTFOLIO</h1>
+        <h1 class="default-header">JGM PORTFOLIO</h1>
         <nav>
             <!-- this anchor tag is in place for mobile devices -->
             <a class="burger-nav"></a>
@@ -29,122 +30,129 @@
             </ul>
         </nav>
 
-        
+
     </header>
-<main>
+    <main>
 
-    <!-- we dont want our banner squashed sooo and or downloading a file bigger than needed  -->
-<section class="banner">
-    <picture >
-        <source  srcset="assets/images/mobile-banner.png" media="(max-width:480px)">
-        <source  srcset="assets/images/tablet-banner.png" media="(max-width:768px)">
-        <img  src="assets/images/banner.png" alt="banner image of leafs...or is it leaves">
-    </picture>
-</section>
-
-<!-- this is for our profile pic -->
-<div class="pp-position">
-<picture >
-    <source  srcset="assets/images/mobile-pp.png" media="(max-width:480px)">
-    <source  srcset="assets/images/tablet-pp.png" media="(max-width:768px)"> 
-    <img  src="assets/images/pp.png" alt="banner image of leafs...or is it leaves">
-</picture>
-</div>
-
-    <section id="AboutMe">
-        <h2>ABOUT ME</h2>
-        <p class="paragraph">Hello, I'm excited for you to be here! My name is Jennifer Gutierrez Manjares and this is my portfolio.</p>
-
-    </section>
-
-    <section id="Work">
-        <h2>WORK</h2>
-        <!-- so my thinking is that i'll have 3 picture tags within this section in order to easily 
-        swap from the various sizings of devices -->
-        <div class="org-images">
-            
-            <div class="title">
-            <a href="https://scratch.mit.edu/projects/723487763" target="_blank">
-            <picture >
-                <source  srcset="assets/images/mobile-work1.png" media="(max-width:480px)">
-                <source  srcset="assets/images/tablet-work1.png" media="(max-width:768px)">
-                <img  class="image" src="assets/images/work1.png" alt="banner image of leafs...or is it leaves">
+        <!-- we dont want our banner squashed sooo and or downloading a file bigger than needed  -->
+        <section class="banner">
+            <picture>
+                <source srcset="assets/images/mobile-banner.png" media="(max-width:480px)">
+                <source srcset="assets/images/tablet-banner.png" media="(max-width:768px)">
+                <img src="assets/images/banner.png" alt="banner image of leafs...or is it leaves">
             </picture>
-            </a>
-            <div class="title-posish"> Baddie Quiz</div>
+        </section>
+
+        <!-- this is for our profile pic -->
+        <div class="pp-position">
+            <picture>
+                <source srcset="assets/images/mobile-pp.png" media="(max-width:480px)">
+                <source srcset="assets/images/tablet-pp.png" media="(max-width:768px)">
+                <img src="assets/images/pp.png" alt="banner image of leafs...or is it leaves">
+            </picture>
+        </div>
+
+        <section id="AboutMe">
+            <h2>ABOUT ME</h2>
+            <p class="paragraph">Hello, I'm excited for you to be here! My name is Jennifer Gutierrez Manjares and this
+                is my portfolio.</p>
+
+        </section>
+
+        <section id="Work">
+            <h2>WORK</h2>
+            <!-- so my thinking is that i'll have 3 picture tags within this section in order to easily 
+        swap from the various sizings of devices -->
+            <div class="org-images">
+
+                <div class="title">
+                    <a href="https://scratch.mit.edu/projects/723487763" target="_blank">
+                        <picture>
+                            <source srcset="assets/images/mobile-work1.png" media="(max-width:480px)">
+                            <source srcset="assets/images/tablet-work1.png" media="(max-width:768px)">
+                            <img class="image" src="assets/images/work1.png"
+                                alt="banner image of leafs...or is it leaves">
+                        </picture>
+                    </a>
+                    <div class="title-posish"> Baddie Quiz</div>
+                </div>
+
+                <!-- adding a div around the other two pictures to help with styling and arrangement -->
+                <!-- links go around our pictures to make them live links, so cool!!! -->
+                <div class="title">
+                    <a href="https://jenjen0219.github.io/Prework-New/" target="_blank">
+                        <picture>
+                            <source srcset="assets/images/mobile-work2.png" media="(max-width:480px)">
+                            <source srcset="assets/images/tablet-work2.png" media="(max-width:768px)">
+                            <img class="image" src="assets/images/work2.png"
+                                alt="banner image of leafs...or is it leaves">
+                        </picture>
+                    </a>
+                    <div class="title-posish">Prework Study Guide</div>
+                </div>
+
+                <div class="title">
+                    <a href="https://jenjen0219.github.io/Activity22/" target="_blank">
+                        <picture>
+                            <source srcset="assets/images/mobile-work2.png" media="(max-width:480px)">
+                            <source srcset="assets/images/tablet-work2.png" media="(max-width:768px)">
+                            <img src="assets/images/work2.png" alt="banner image of leafs...or is it leaves"
+                                class="image">
+                        </picture>
+                    </a>
+                    <div class="title-posish">Montana Is A Real Place</div>
+                </div>
+
+                <div class="title">
+                    <!-- pleaaasseeeee don't prosecute me for using the same link for 3 of my images, i'm only human and plan to add more when i make them!!! PLEASE!!!  -->
+                    <a href="https://jenjen0219.github.io/Activity22/" target="_blank">
+                        <picture>
+                            <source srcset="assets/images/mobile-work2.png" media="(max-width:480px)">
+                            <source srcset="assets/images/tablet-work2.png" media="(max-width:768px)">
+                            <img src="assets/images/work2.png" alt="banner image of leafs...or is it leaves"
+                                class="image">
+                        </picture>
+                    </a>
+                    <div class="title-posish">I have the same link as the one before</div>
+                </div>
+
+                <div class="title">
+                    <a href="https://jenjen0219.github.io/Activity22/" target="_blank">
+                        <picture>
+                            <source srcset="assets/images/mobile-work2.png" media="(max-width:480px)">
+                            <source srcset="assets/images/tablet-work2.png" media="(max-width:768px)">
+                            <img src="assets/images/work2.png" alt="banner image of leafs...or is it leaves"
+                                class="image">
+                        </picture>
+                    </a>
+                    <div class="title-posish">Hmmmm as do i....</div>
+                </div>
+
             </div>
-        
-        <!-- adding a div around the other two pictures to help with styling and arrangement -->
-            <!-- links go around our pictures to make them live links, so cool!!! -->
-            <div class="title">
-            <a href="https://jenicide-1029.github.io/Prework-New/" target="_blank">
-                <picture>
-                    <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
-                    <source  srcset="assets/images/tablet-work2.png" media="(max-width:768px)" >
-                    <img class="image" src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" >
-                </picture>
-            </a>
-            <div class="title-posish">Prework Study Guide</div>
-            </div>
+        </section>
 
-            <div class="title">
-            <a href="https://jenicide-1029.github.io/Activity22/" target="_blank">
-                <picture>
-                    <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
-                    <source  srcset="assets/images/tablet-work2.png" media="(max-width:768px)" >
-                    <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
-                </picture>
-            </a>
-            <div class="title-posish">Montana Is A Real Place</div>
-            </div>
+        <section id="Resume">
+            <h2>RESUME</h2>
+            <p class="paragraph">COMING SOON!</p>
+        </section>
 
-            <div class="title">
-            <!-- pleaaasseeeee don't prosecute me for using the same link for 3 of my images, i'm only human and plan to add more when i make them!!! PLEASE!!!  -->
-            <a href="https://jenicide-1029.github.io/Activity22/" target="_blank">
-                <picture>
-                    <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
-                    <source  srcset="assets/images/tablet-work2.png" media="(max-width:768px)" >
-                    <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
-                </picture>
-            </a>
-            <div class="title-posish">I have the same link as the one before</div>
-            </div>
+        <section id="ContactInfo">
+            <h2>CONTACT INFO</h2>
+            <address class="paragraph">
+                <p>Email: jengutierrez.1210@gmail.com</p>
+                <p>Phone Number: (555) 555-5656 </p>
+                <p><a href="https://github.com/JENICIDE-1029">GitHub</a></p>
+            </address>
 
-            <div class="title">
-            <a href="https://jenicide-1029.github.io/Activity22/" target="_blank">
-                <picture>
-                    <source  srcset="assets/images/mobile-work2.png" media="(max-width:480px)" >
-                    <source  srcset="assets/images/tablet-work2.png" media="(max-width:768px)" >
-                    <img  src="assets/images/work2.png" alt="banner image of leafs...or is it leaves" class="image">
-                </picture>
-            </a>
-            <div class="title-posish">Hmmmm as do i....</div>
-            </div>
-        
-    </div>
-    </section>
+        </section>
 
-    <section id="Resume">
-        <h2>RESUME</h2>
-        <p class="paragraph">COMING SOON!</p>
-    </section>
-
-    <section id="ContactInfo">
-        <h2>CONTACT INFO</h2>
-        <address class="paragraph">
-        <p>Email: jengutierrez.1210@gmail.com</p>
-            <p>Phone Number: (555) 555-5656 </p>
-            <p ><a href="https://github.com/JENICIDE-1029">GitHub</a></p>
-        </address>
-
-    </section>
-
-    <footer>
-        <h3>Thank you for your time! </h3>
-    </footer>
-</main>
+        <footer>
+            <h3>Thank you for your time! </h3>
+        </footer>
+    </main>
 </body>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="./assets/js/java.js"></script>
+
 </html>
