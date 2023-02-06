@@ -16,4 +16,4 @@ To use this portfolio website, click on the navigation bar menu items to be dire
 
 ![Screenshot of Website](assets/images/screenshot.png)
 
-!link to Website:https://jenicide-1029.github.io/Challenge2/ 
+!link to Website:https://jenjen0219.github.io/Challenge2-Portfolio/
